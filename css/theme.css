@@ -1,0 +1,246 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.theme-dropdown .dropdown-menu {
+  display: block;
+  position: static;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}#formContainer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    text-align: center;
+}
+
+textarea{
+    border: 3px solid #000000;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #E5E5E5;
+}
+
+.controlButton{
+    background-color: #7F7F7F;
+    border: 1px solid #000000;
+    padding: 5px 10px 5px 10px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+#divQueryResults table{
+    border: 3px solid #000000;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #E5E5E5;
+}
+#divQueryResults table tr td{
+    border-bottom: 1px solid #000000;
+    padding: 5px;
+    font-family: Verdana;
+    font-size: 14px;
+
+}
+
+#questionContainer{
+    color: #ffffff;
+    font-size: 14px;
+    padding: 20px 0px 20px 10px;
+    width: 600px;
+}
+
+#divProblemTables table{
+    border: 3px solid #000000;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #E5E5E5;
+    margin-bottom: 20px;
+}
+#divProblemTables table tr td{
+    border-bottom: 1px dashed #000000;
+    padding: 5px;
+    font-size: 6px;
+    font-family: Verdana;
+}
+
+#divPuzzleTables table{
+    border: 3px solid #000000;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #E5E5E5;
+    margin-bottom: 20px;
+}
+#divPuzzleTables table tr td{
+    border-bottom: 1px dashed #000000;
+    padding: 5px;
+    font-family: Verdana;
+}
+
+.problemTableHeader{
+    font-weight: bold;
+}
+
+#col2Container{
+    position: fixed;
+    top: 8em;
+    right: 1em;
+    z-index: 1;
+    opacity: 0.5;
+    border: 0px;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    background-color: #7F7F7F;
+}
+
+.dbTableName{
+    font-weight: bold;
+    color: #ffffff;
+    font-family: Verdana;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+#pageHeader{
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.questionItemLabel{
+    color: #ffffff;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.txtTableInfo{
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #E5E5E5;
+    width: 200px;
+}
+
+.textField{
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #E5E5E5;
+    width: 200px;
+}
+
+#tblSelectedTablesList{
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 25px;
+    background-color: #7F7F7F;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#tblQueryBreakdown{
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 25px;
+    background-color: #7F7F7F;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.sqlClause{
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #E5E5E5;
+}
+
+.btnControls{
+    padding: 20px;
+}
+
+.formTable{
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #7F7F7F;
+    margin-bottom: 20px;
+}
+
+.dataList{
+    width: 100%;
+}
+
+.dataList tr td{
+    color: #ffffff;
+    /*border-bottom: 1px dashed #ffffff;*/
+    text-align: left;
+    padding: 5px;
+}
+
+.dataList a{
+    color: #0000ff;
+}
+
+.dataList a:hover{
+    color: #ff0000;
+}
+
+.linkButton{
+	border: 1px solid #000000;
+	padding: 5px 10px 5px 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#puzzleProblem, #puzzleSolution {
+		width: 900px;
+		border: 1px solid #ffffff;
+		border-radius: 10px;
+		padding: 15px;
+		display: block;
+		float: left;
+		margin-bottom: 20px;
+	}
+	
+	.puzzlePiece{
+		border: 1px solid #ffffff;
+		border-radius: 5px;
+		padding: 10px;
+		float: left;
+		margin: 10px;
+		background-color: #ffffff;
+	}
+	
+	.puzzlePieceEmpty{
+		border: 1px dashed #ffffff;
+		border-radius: 5px;
+		float: left;
+		margin: 10px;
+		height: 35px;
+		width: 100px;
+	}
+	
+	#insult{
+		background-color:#750808;
+		clear: both;
+		width: 200px;
+		text-align: center;
+		color: #ffffff;
+		font-weight: bold;
+		padding: 20px;
+		border-radius: 10px;	
+		visibility: hidden;
+		display: none;
+		position: absolute;			
+	}
+
