@@ -1,19 +1,15 @@
 <?php
-/*
 ini_set('display_errors', 'On');
 error_reporting(E_ALL);
-*/
 
 require 'User.php';
 
+$db = new DbUtilities();
+
 session_start();
 
-/* We need to create a connection to the db to sanatize input, replace with better solution */
-//$mysqli = new mysqli("localhost", "sqltutor", "59g#=@89+>5=up.()56Vb8)yBak4k>Mi", "sqltutor");
-$mysqli = new mysqli("localhost", "root", "bitnami", "sqltutor");
-
-$email = $mysqli->real_escape_string($_POST['txtEmail']);
-$password = $mysqli->real_escape_string($_POST['txtPassword']);
+$email = $db->cleanInput($_POST['txtEmail']);
+$password = $db->cleanInput($_POST['txtPassword']);
 
 if($email !== "" && $password !== ""){
 

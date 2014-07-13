@@ -182,6 +182,11 @@ class DbUtilities
 
 		return json_encode($jsonArray);
 	}
+	
+	public function cleanInput($unsafeInput)
+	{
+		return $this->mysqli->real_escape_string($unsafeInput);
+	}
 
 
 
