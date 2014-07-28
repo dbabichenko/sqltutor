@@ -12,6 +12,7 @@ echo
     <link rel='shortcut icon' href='../../docs-assets/ico/favicon.png'>
     
     <script language='javascript' src='scripts/jquery-1.10.2.min.js'></script>
+    <script  language='javascript' src='jquery-ui/js/jquery-ui-1.10.3.custom.min.js'></script>
     <script language='javascript' src='scripts/tablebuilder.js'></script>
     <script language='javascript' src='scripts/utils.js'></script>
     
@@ -23,6 +24,7 @@ echo
     <!-- Bootstrap core CSS -->
     <link href='css/bootstrap.css' rel='stylesheet' type='text/css'>
     <link href='css/theme.css' rel='stylesheet' type='text/css'>
+    <link type='text/css' rel='stylesheet' href='css/mainstyle.css'/>
 </head>
 
 <body>

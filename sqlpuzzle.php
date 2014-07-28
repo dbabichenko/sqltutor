@@ -3,9 +3,6 @@ $pageTitle = "SQL Puzzle";
 require('inc/security.php');
 require('layout/header.php');
 
-
-
-
 function cleanQueryElementNames($el){
 	$tmp = str_replace(",", "", $el);
 	$tmp = str_replace("=", "equal", $tmp);
