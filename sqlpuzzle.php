@@ -1,7 +1,9 @@
 <?php
 $pageTitle = "SQL Puzzle";
-require("utilities/dbutils.php");
-require("layout/header.php");
+require('inc/security.php');
+require('layout/header.php');
+
+
 
 
 function cleanQueryElementNames($el){

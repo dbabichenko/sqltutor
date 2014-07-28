@@ -1,19 +1,16 @@
 <?php
+require('inc/security.php');
 $pageTitle = "Create User";
 require("layout/header.php");
-require("utilities/dbutils.php");
 require("utilities/stringutils.php");
 
 $userID = "";
-$txtFirstName 	= "";
-$txtLastName 	= "";
-$txtEmail 		= "";
-$txtPassword 	= "";
+$txtFirstName = "";
+$txtLastName = "";
+$txtEmail = "";
+$txtPassword = "";
 	
-
 $db = new DbUtilities;
-
-
 
 //echo "User ID from GET: " . $_GET["userID"] . "<br />";
 //echo "User ID from POST: " . $_POST["userID"] . "<br />";
@@ -67,38 +64,37 @@ if($userID != ""){
 	$submitButtonText = "Update User";
 }
 
-echo "UserID: " . $userID . "<br />"
+echo "UserID: " . $userID . "<br />";
 
-?>
-<form name="frmCreateUser" method="POST" action="createuser.php">
-	<input type="hidden" name="userID" id="userID" value="<?php echo $userID; ?>" />
-    <table class="formTable">
+echo "
+<form name='frmCreateUser' method='POST' action='createuser.php'>
+	<input type='hidden' name='userID' id='userID' value='$userID' />
+    <table class='formTable'>
         <tr>
             <td>First Name:</td>
-            <td><input type="text" id="txtFirstName" name="txtFirstName" value="<?php echo $txtFirstName; ?>" class="textField" />
+            <td><input type='text' id='txtFirstName' name='txtFirstName' value='$txtFirstName' class='textField' />
         </tr>
         <tr>
             <td>Last Name:</td>
-            <td><input type="text" id="txtLastName" name="txtLastName" value="<?php echo $txtLastName; ?>" class="textField" />
+            <td><input type='text' id='txtLastName' name='txtLastName' value='$txtLastName' class='textField' />
         </tr>
         <tr>
             <td>Email:</td>
-            <td><input type="text" id="txtEmail" name="txtEmail" value="<?php echo $txtEmail; ?>" class="textField" />
+            <td><input type='text' id='txtEmail' name='txtEmail' value='$txtEmail' class='textField' />
         </tr>
         <tr>
             <td>Password:</td>
-            <td><input type="password" id="txtPassword" name="txtPassword" value="" class="textField" />
+            <td><input type='password' id='txtPassword' name='txtPassword' value='' class='textField' />
         </tr>
         <tr>
             <td>Confirm Password:</td>
-            <td><input type="password" id="txtPasswordConfirm" name="txtPasswordConfirm" value="" class="textField" />
+            <td><input type='password' id='txtPasswordConfirm' name='txtPasswordConfirm' value='' class='textField' />
         </tr>
         <tr>
-            <td colspan="2" align="right"><input type="submit" id="btnSubmit" name="btnSubmit" value="<?php echo $submitButtonText; ?>" /></td>
+            <td colspan='2' align='right'><input type='submit' id='btnSubmit' name='btnSubmit' value='$submitButtonText' /></td>
         </tr>
     </table>
 </form>
+";
 
-<?php
 require("layout/footer.php");
-?>

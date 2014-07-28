@@ -1,8 +1,12 @@
 <?php
+/*
+ini_set('display_errors', 'On');
+error_reporting(E_ALL);
+*/
 
-require 'utilities/dbutils.php';
-require 'libs/password.php';
-require 'libs/uuid.php';
+require('utilities/dbutils.php');
+require('libs/password.php');
+require('libs/uuid.php');
 
 
 
@@ -42,15 +46,13 @@ class User
 			$this->createUserByID($userID);
 
 		}
-		elseif
-		($userData['email'] !== null && $userData['password'] !== null && $userData['firstName'] == null && $userData['lastName'] == null)
+		elseif($userData['email'] !== null && $userData['password'] !== null && $userData['firstName'] == null && $userData['lastName'] == null)
 		{
 
 			$this->createUserByCredentrials($userData['email'], $userData['password']);
 
 		}
-		elseif
-		($userData['email'] !== null && $userData['password'] !== null && $userData['firstName'] !== null || $userData['lastname'] !== null)
+		elseif($userData['email'] !== null && $userData['password'] !== null && $userData['firstName'] !== null || $userData['lastname'] !== null)
 		{
 
 			$this->createNewUserWithData($userData);
@@ -133,10 +135,10 @@ $sql = "SELECT * FROM users WHERE email=?  LIMIT 1";
 
 		echo "Unencrypted password is:" . $password . "<br>";
 		echo "Encrypted password is:" . $userData[0]['password'] . "<br>";
-		
+
 		echo password_hash($password, PASSWORD_BCRYPT);
-/* 		var_dump(password_verify($password, $userData[0]['password'])); */
-		
+		/* 		var_dump(password_verify($password, $userData[0]['password'])); */
+
 		if
 		(password_verify($password, $userData[0]['password']))
 		{
@@ -147,7 +149,7 @@ $sql = "SELECT * FROM users WHERE email=?  LIMIT 1";
 			$this->lastName = $userData[0]['lastName'];
 			$this->email = $userData[0]['email'];
 			$this->password = $userData[0]['password'];
-			
+
 		}
 		/*
 	    * Take this out once md5 is phased out!

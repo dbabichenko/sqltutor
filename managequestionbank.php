@@ -1,19 +1,18 @@
 <?php
-require("utilities/dbutils.php");
-
 $pageTitle = "Manage Question Collections";
-require("layout/header.php");
-?>
-<table class="dataList formTable" id="tblCollectionList">
+require('inc/security.php');
+require('layout/header.php');
+echo "
+<table class='dataList formTable' id='tblCollectionList'>
     <tr>
-        <td colspan="3" style="text-align: right;"><a href="createquestionbank.php" class="linkButton">Create new question bank</a></td>
+        <td colspan='3' style='text-align: right;'><a href='createquestionbank.php' class='linkButton'>Create new question bank</a></td>
     </tr>
 
     <tr>
-        <td class="problemTableHeader">Edit</td>
-        <td class="problemTableHeader">Collection</td>
-        <td class="problemTableHeader">Description</td>
-    </tr><?php
+        <td class='problemTableHeader'>Edit</td>
+        <td class='problemTableHeader'>Collection</td>
+        <td class='problemTableHeader'>Description</td>
+    </tr>";
     $db = new DbUtilities;
     $collectionList = $db->getDataset("SELECT bankId, bankName, description FROM sqltutor.testbank;");
 	foreach($collectionList as &$row){
@@ -24,10 +23,6 @@ require("layout/header.php");
         echo "</tr>\n";
     }
     
-    ?>
-    
-</table>
-    
-<?php
+echo "</table>";
+
 require("layout/footer.php");
-?>

@@ -35,6 +35,9 @@ textarea{
     border-radius: 5px;
 
 }
+#logoutBtn{
+	margin-left: 5px;
+}
 #divQueryResults table{
     border: 3px solid #000000;
     border-radius: 15px;
@@ -50,7 +53,7 @@ textarea{
 }
 
 #questionContainer{
-    color: #ffffff;
+    color: #000000;
     font-size: 14px;
     padding: 20px 0px 20px 10px;
     width: 600px;
@@ -199,6 +202,10 @@ textarea{
 	padding: 5px 10px 5px 10px;
 	border-radius: 5px;
 	text-decoration: none;
+	color: #ffffff;
+}
+
+.linkButton a{
 	color: #ffffff;
 }
 
