@@ -1,4 +1,6 @@
 <?php
+
+require('inc/security.php');
 require("utilities/dbutils.php");
 require("utilities/stringutils.php");
 
